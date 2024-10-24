@@ -4,6 +4,7 @@
  *
  * @var stm_lms_ajaxurl
  */
+console.log('certificate');
 stm_lms_components['certificate'] = {
     template: '#stm-lms-dashboard-certificate',
     props: ['id'],
@@ -31,7 +32,7 @@ stm_lms_components['certificate'] = {
     },
     mounted: function mounted() {
         var _this = this;
-
+console.log('certi mount');
         _this.id = _this.$route.params.id;
         this.getStudents();
     },

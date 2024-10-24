@@ -4,7 +4,7 @@
  * @var VueRouter
  * @var stm_lms_components
  */
-
+console.log('dashboard');
 new Vue({
   router: new VueRouter({
     routes: [{

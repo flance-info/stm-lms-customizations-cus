@@ -46,7 +46,7 @@ add_action('admin_enqueue_scripts', function(){
     wp_enqueue_style( 'slms-admin', SLMS_URL. 'assets/css/admin.css', [], SLMS_VERSION, 'all' );
 
     wp_deregister_script('stm-lms-dashboard/components/course');
-    wp_enqueue_script( 'stm-lms-dashboard/components/course', SLMS_URL. 'assets/js/dashboard/course.js', ['jquery', 'stm_lms_table_update_scripts'], SLMS_VERSION, 'all' );
+    wp_enqueue_script( 'stm-lms-dashboard/components/course', SLMS_URL. 'assets/js/dashboard/course.js', ['jquery', 'stm_lms_table_update_scripts'], time(), 'all' );
 
 }, 100);
 
